@@ -1,0 +1,46 @@
+{
+    repository(owner: "${repositoryOwner}", name: "${repositoryName}") {
+        name
+        pullRequests(last: 100) {
+            nodes {
+                merged
+                files(first: 100) {
+                    nodes {
+                        path
+                    }
+                }
+                author {
+                    login
+                }
+                createdAt
+                id
+                url
+                title
+                reviews(first: 100) {
+                    nodes {
+                        author {
+                            login
+                        }
+                        createdAt
+                        id
+                        state
+                    }
+                }
+                suggestedReviewers {
+                    reviewer {
+                        name
+                    }
+                }
+                closedAt
+                closed
+                mergedAt
+                mergedBy {
+                    login
+                }
+                number
+                state
+            }
+        }
+        createdAt
+    }
+}

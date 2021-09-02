@@ -1,0 +1,9 @@
+env.ts
+.graphqlconfig
+.vscode
+.idea
+*.iml
+
+node_modules
+
+dist/**/*
