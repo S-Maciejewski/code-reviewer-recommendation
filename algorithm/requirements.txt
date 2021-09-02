@@ -1,0 +1,11 @@
+astroid==2.5.2
+isort==5.8.0
+lazy-object-proxy==1.6.0
+mccabe==0.6.1
+protobuf==3.15.6
+psutil==5.8.0
+pylint==2.7.4
+six==1.15.0
+toml==0.10.2
+tqdm==4.60.0
+wrapt==1.12.1

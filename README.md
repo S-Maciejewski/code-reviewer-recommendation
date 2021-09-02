@@ -1,9 +1,32 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww14100\viewh11400\viewkind0
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+## Code Reviewer Recommendation Algorithm
 
-\f0\fs24 \cf0 ### Code Reviewer Recommendation Algorithm\
-}
+by Jan Techner and Sebastian Maciejewski
+
+The repository is the attachment to the master thesis and contains the following elements: 
+
+ - the implementation of the profile based code reviewer recommendation algorithm presented in the paper "Profile based recommendation of code reviewers" by Mikołaj Fejzer, Piotr Przymus and Krzysztof Stencel
+ - the dataset used to evaluate the algorithm
+ - the results of the algorithm as a .csv file
+ - the data provider that allows to fetch the data from the other open source repositories
+
+
+### Installation
+
+The algorithm is implemented using Python 3.8.
+You can install Python dependencies using the following command:
+```
+pip3 install -r requirements.txt
+```
+### Execution
+
+In order to run the algorithm use the following command
+
+```
+python3 new.py data/android.json 
+```
+
+You can also print the results as comma-separated values:
+
+```
+python3 new.py data/android.json --csv
+```

@@ -10,7 +10,7 @@ def intersection(list1, list2):
 
 class ReviewsParser:
     @staticmethod
-    def get_reviews_from_file(file):
+    def reviews_from(file):
         with open(file) as f: reviews = json.load(f)
 
         pull_requests = [PullRequest(index, review) for index, review in enumerate(reviews)]
