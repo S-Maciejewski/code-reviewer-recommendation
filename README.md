@@ -30,3 +30,7 @@ You can also print the results as comma-separated values:
 ```
 python3 new.py data/android.json --csv
 ```
+
+### Data provider
+
+To use the data provider it is necessary to install Node.js and npm, then install dependencies with `npm install` and run the provider with `npm start`.
